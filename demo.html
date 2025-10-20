@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ArCA : 2025 : HTML Demo</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A really cool HTML demo">
+  <meta name="keywords" content="HTML, CSS, JavaScript, ArCA">
+  <meta name="author" content="Arkansas Coding Academy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>This is my chicken page</h1>
+  <a href="#bottom">Go to bottom.</a>
+
+
+
+  <!-- HTML elements for Javascript interactions -->
+
+  <h1 id="example">Example Page</h1>
+  <div id="content">
+    This is the <span id="main" class="spanner">main content</span> of the <span id="page" class="spanner">page</span>.
+    <br>
+
+    <br /><br />
+    List of items :
+    <ol id="itemlist">
+      <li>First item</li>
+    </ol>
+    <button onclick="addListItem()">Add new item</button>
+  </div>
+
+  <!-- END of HTML elements for Javascript interactions -->
+
+
+
+  <div>
+    <h2>Forms...</h2>
+    <form>
+      First Name : <input type="text" name="fname" id="id" tabindex="1"><br>
+      Last Name : <input onclick="doAlert()" type="text" name="lname" id="lname"><br>
+      Email : <input type="email" name="email"><br>
+      Phone : <input type="tel" name="phone"><br>
+      SSN : <input type="password" name="ssn"><br>
+      Subscribe to our newsletter : <input type="checkbox" name="newsletter"><br>
+      Subscribe to our podcast : <input type="checkbox" name="podcast"><br>
+
+      Favorite Chicken?<br>
+      <input type="radio" value="leghorn" name="chicken">White Leghorn <br>
+      <input type="radio" value="sussex" name="chicken">Speckled Sussex<br>
+      <input type="radio" value="star" name="chicken">Black Star<br>
+
+      Select File : <input type="file" name="upload-file"><br>
+      <input type="hidden" name="hidden-input" value="My Hidden Value">
+
+
+      College?
+      <select name="college">
+        <option value="--">-- Choose One --</option>
+        <option value="uca">UCA</option>
+        <option value="cbc">CBC</option>
+        <option value="hendrix">Hendrix</option>
+      </select>
+
+      <br><br>
+
+      Interests:
+      <select name="interests" multiple>
+        <option>Football</option>
+        <option>Cheer</option>
+        <option>Computers</option>
+        <option>Backpacking</option>
+      </select>
+
+      <br>
+
+      Enter Essay Here : <br>
+      <textarea name="essay" cols="60" rows="10">
+
+      </textarea>
+      <br>
+      Date/Time : <input type="datetime-local">
+      <br><br>
+      <input type="range" id="vol" name="vol" min="0" max="50">
+      <br>
+
+      <br><br>
+      <button name="my-button">This is my button!</button>
+      <br>
+      <input type="submit" value="Send it!">
+    </form>
+
+    <br><br>
+  </div>
+
+  <ul>
+    <li>Item #1</li>
+    <li>Item #2</li>
+    <ul>
+      <li>Item A</li>
+      <li>Item B</li>
+      <ul>
+        <li>Item C</li>
+        <li>Item D</li>
+      </ul>
+    </ul>
+    <li>Item #3</li>
+    <li>Item #4</li>
+  </ul>
+
+  <div>
+    <h1>This is my table : </h1>
+
+    <table style="border: 1px solid">
+      <tr>
+        <th style="border: 1px solid">Header 1</th>
+        <th style="border: 1px solid">Header 2</th>
+        <th style="border: 1px solid">Header 3</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid">Row 1 - Column 1</td>
+        <td style="border: 1px solid">Row 1 - Column 2</td>
+        <td style="border: 1px solid">Row 1 - Column 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 - Column 1</td>
+        <td>Row 2 - Column 2</td>
+        <td>Row 3 - Column 3</td>
+      </tr>
+      <tr>
+        <td>Row 2 - Column 1</td>
+        <td></td>
+        <td>Row 2 - Column 2</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div>
+    <h2>This is the first paragraph about my chicken</h2>
+    <p>
+      <span style="font-weight: bold;">Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Vivamus porta
+      nisl non mauris accumsan, non pretium magna molestie. Maecenas et blandit lorem. Sed sed augue at mi euismod
+      consectetur ac quis enim. Quisque tempus gravida placerat. Nulla dolor justo, commodo vel metus et, malesuada
+      viverra dolor. Quisque rutrum turpis nulla, ut tempor purus dignissim non. Integer id nulla diam. Maecenas
+      faucibus ex in tellus bibendum, id consectetur est hendrerit. Cras sit amet sodales nulla. Sed in urna sit amet
+      dui rutrum feugiat. Nunc sit amet mattis nisi, et dictum nisl. Duis maximus, diam non malesuada egestas, massa
+      lectus lobortis ante, quis efficitur orci ante et tellus. Sed vel cursus urna. Suspendisse vitae aliquet
+      <strong>massa.</strong>
+    </p>
+
+    <h2>This is the second paragraph about my chicken</h2>
+    <p>
+      <span style="color: blue; font-weight: bold; font-size: 150%;">Lorem ipsum dolor sit amet</span>, consectetur
+      adipiscing elit. Vivamus porta nisl non mauris accumsan, non pretium magna molestie. Maecenas et blandit lorem.
+      Sed sed augue at mi euismod consectetur ac quis enim. Quisque tempus gravida placerat. Nulla dolor justo, commodo
+      vel metus et, malesuada viverra dolor. Quisque rutrum turpis nulla, ut tempor purus dignissim non. Integer id
+      nulla diam. Maecenas faucibus ex in tellus bibendum, id consectetur est hendrerit. Cras sit amet sodales nulla.
+      Sed in urna sit amet dui rutrum feugiat. Nunc sit amet mattis nisi, et dictum nisl. Duis maximus, diam non
+      malesuada egestas, massa lectus lobortis ante, quis efficitur orci ante et tellus. Sed vel cursus urna.
+      Suspendisse vitae aliquet <em>massa.</em>
+    </p>
+
+    <h3>Chicken Pictures :</h3>
+    <div>
+      <img src="red-chicken.jpg" alt="A red chicken" title="Look at my chicken!" height="400" width="600">
+    </div>
+    <div>
+      <img src="red-chicken.jpg" alt="A red chicken" height="400" width="600">
+    </div>
+
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    Line 2: <a href="https://uca.edu">This is #2</a> <br>
+    Line 3: Hello 3 <br><br>
+    Line 4: This is line 4<br>
+    Line 5: Line 5 checking in.<br>
+    <a id="bottom">This is the bottom</a>
+  </div>
+</body>
+
+<script type = "text/javascript">
+  if ( localStorage.totalPageLoads ) {
+    localStorage.totalPageLoads = Number(localStorage.totalPageLoads) + 1;
+  } else {
+    localStorage.totalPageLoads = 1;
+  }
+</script>
+
+</html>
